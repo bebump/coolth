@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-11-25T23:21:39Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.5.1"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "top"
+        },
+        "Owner": "Attila Szarvas <attila.szarvas@gmail.com>",
+        "Size": {
+            "X": 54.28,
+            "Y": 67.3
+        }
+    }
+}
