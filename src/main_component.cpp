@@ -191,6 +191,9 @@ void MainComponent::program_loop(
 
             StringStream stream(data, length);
             std::optional<float> cpu = AsFloat(stream.GetInt());
+            if (!cpu) {
+              stream.ForwardToNextToken();
+            }
             std::optional<float> gpu = AsFloat(stream.GetInt());
             temperature_component_.SetTemps(cpu, gpu);
           });
