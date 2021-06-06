@@ -44,7 +44,9 @@ MainComponent::MainComponent()
     juce::AlertWindow alert_window(
         "About Bebump Coolth",
         "Copyright 2020-2021 (c) Attila Szarvas <attila.szarvas@gmail.com>\n\n"
-        "https://github.com/bebump/coolth\n",
+        "https://github.com/bebump/coolth\n\n\n"
+        "Temperatures are read using Open Hardware Monitor 0.9.6\n\n"
+        "https://openhardwaremonitor.org",
         juce::AlertWindow::AlertIconType::InfoIcon, nullptr);
     alert_window.addButton("Ok", 0);
     alert_window.runModalLoop();
