@@ -30,3 +30,10 @@ std::optional<int> StringStream::GetInt() {
 
   return {};
 }
+
+void StringStream::ForwardToNextToken() {
+  while (length_ > 0 && (*data_ != ' ')) {
+    ++data_;
+    --length_;
+  }
+}

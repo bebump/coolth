@@ -7,6 +7,7 @@ struct StringStream {
       : data_(data), length_(length) {}
 
   std::optional<int> GetInt();
+  void ForwardToNextToken();
 
  private:
   const char* data_;
