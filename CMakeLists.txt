@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
 
-project(bebump_coolth VERSION 0.9.5)
+project(bebump_coolth VERSION 0.9.6)
 
 add_subdirectory(bbmp_windows)
 add_subdirectory(extern/JUCE)
