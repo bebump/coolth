@@ -17,14 +17,14 @@ namespace temperature_reader
 
         static void Main(string[] args)
         {
-            float? cpuTemp = null;
-            float? gpuTemp = null;
-
             var computer = new Computer() { CPUEnabled = true, GPUEnabled = true };
             computer.Open();
 
             while (true)
             {
+                float? cpuTemp = null;
+                float? gpuTemp = null;
+
                 foreach (var hardwareItem in computer.Hardware)
                 {
                     if (hardwareItem.HardwareType == HardwareType.CPU)
