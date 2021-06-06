@@ -38,6 +38,17 @@ namespace temperature_reader
                                 cpuTemp = sensor.Value;
                             }
                         }
+
+                        if (cpuTemp == null)
+                        {
+                            foreach (var sensor in hardwareItem.Sensors)
+                            {
+                                if (sensor.SensorType == SensorType.Temperature && sensor.Name == "CPU Core #1")
+                                {
+                                    cpuTemp = sensor.Value;
+                                }
+                            }
+                        }
                     }
 
                     if (hardwareItem.HardwareType == HardwareType.GpuAti || hardwareItem.HardwareType == HardwareType.GpuNvidia)
